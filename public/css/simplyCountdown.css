@@ -1,0 +1,76 @@
+.simply-countdown {
+    /* The countdown */
+    margin-bottom: 2em;
+  }
+  
+  .simply-countdown > .simply-section {
+    /* coutndown blocks */
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: #daa3aa;
+    margin: 0 4px;
+    border-radius: 50%;
+    position: relative;
+    -webkit-animation: pulse 1s ease infinite;
+            animation: pulse 1s ease infinite;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .simply-countdown > .simply-section {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  
+  .simply-countdown > .simply-section > div {
+    /* countdown block inner div */
+    display: table-cell;
+    vertical-align: middle;
+    height: 100px;
+    width: 100px;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .simply-countdown > .simply-section > div {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  
+  .simply-countdown > .simply-section .simply-amount,
+  .simply-countdown > .simply-section .simply-word {
+    display: block;
+    color: white;
+    /* amounts and words */
+  }
+  
+  .simply-countdown > .simply-section .simply-amount {
+    font-size: 30px;
+    /* amounts */
+  }
+  
+  @media screen and (max-width: 480px) {
+    .simply-countdown > .simply-section .simply-amount {
+      font-size: 20px;
+    }
+  }
+  
+  .simply-countdown > .simply-section .simply-word {
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    font-size: 12px;
+    /* words */
+  }
+  
+  @media screen and (max-width: 480px) {
+    .simply-countdown > .simply-section .simply-word {
+      font-size: 9px;
+    }
+  }
+
+  .scd {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }

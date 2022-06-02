@@ -25,6 +25,7 @@
     <link href="css/aos.css?ver=1.1.0" rel="stylesheet">
     <link href="css/ekko-lightbox.css?ver=1.1.0" rel="stylesheet">
     <link href="css/main.css?ver=1.1.0" rel="stylesheet">
+    <link href="css/simplyCountdown.css?ver=1.1.0" rel="stylesheet">
     <noscript>
       <style type="text/css">
         [data-aos] {
@@ -83,6 +84,11 @@
           <div class="ww-social-links"><a class="btn btn-link" href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a><a class="btn btn-link" href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a><a class="btn btn-link" href="#"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a><a class="btn btn-link" href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></div>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="scd">
+    <div>Counter:
+      <p><div class="simply-countdown simply-countdown-one"></div>
     </div>
   </div>
 </div>
@@ -300,5 +306,21 @@
     <script src="scripts/aos.js?ver=1.1.0"></script>
     <script src="scripts/ekko-lightbox.min.js?ver=1.1.0"></script>
     <script src="scripts/main.js?ver=1.1.0"></script>
+
+    <!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
+	<script src="scripts/simplyCountdown.js"></script>
+
+	<script>
+    var d = new Date(2023,02,25,12,30);
+
+    // Default Countdown
+    simplyCountdown('.simply-countdown-one', {
+        year: d.getFullYear(),
+        month: d.getMonth(),
+        day: d.getDate(),
+		    hours: d.getHours(),
+		    minutes: d.getMinutes()
+    });
+</script>
   </body>
 </html>
