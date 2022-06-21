@@ -282,18 +282,18 @@
     <div class="row ww-rsvp-form">
       <div class="col-md-10">
         <div class="card-body">
-          <form action="mailto:boda@cristinacho.com" method="POST">
+          <form action="mailto:boda@cristinacho.com?subject=Boda Cristinacho" method="POST" enctype="text/plain">
             <div class="row">
               <div class="col md-6 pb-3">
                 <div class="form-group">
                   <label for="name-input">Tu nombre*</label>
-                  <input class="form-control" id="name-input" type="text" name="name" required="required"/>
+                  <input class="form-control" id="name-input" type="text" name="Nombre" required="required"/>
                 </div>
               </div>
               <div class="col-md-6 pb-3">
                 <div class="form-group">
                   <label for="email-input">Tu e-mail*</label>
-                  <input class="form-control" id="email-input" type="email" name="_replyto" required="required"/>
+                  <input class="form-control" id="email-input" type="email" name="Email" required="required"/>
                 </div>
               </div>
             </div>
@@ -301,7 +301,7 @@
               <div class="col md-6 pb-3">
                 <div class="form-group">
                   <label for="guest-input">Número de acompañantes</label>
-                  <select class="form-control" id="guest-input" name="guest">
+                  <select class="form-control" id="guest-input" name="Invitados">
                     <option value="1">Uno</option>
                     <option value="2">Dos</option>
                     <option value="3">Tres</option>
@@ -312,10 +312,10 @@
               <div class="col-md-6 pb-3">
                 <div class="form-group">
                   <label for="events-input">Asistiré</label>
-                  <select class="form-control" id="events-input" name="events">
-                    <option value="all-event">Ambos eventos</option>
-                    <option value="wedding-ceremony">Solo a la ceremonia</option>
-                    <option value="reception-party">Solo al convite</option>
+                  <select class="form-control" id="events-input" name="Evento">
+                    <option value="Ambos">Ambos eventos</option>
+                    <option value="Ceremonia">Solo a la ceremonia</option>
+                    <option value="Convite">Solo al convite</option>
                   </select>
                 </div>
               </div>
@@ -324,17 +324,15 @@
               <div class="col">
                 <div class="form-group">
                   <label for="message-input">Tu mensaje</label>
-                  <textarea class="form-control" id="message-input" name="message" rows="4"></textarea>
+                  <textarea class="form-control" id="message-input" name="Mensaje" rows="4"></textarea>
                 </div>
               </div>
             </div>
-            <!--
             <div class="row">
               <div class="col text-center">
                 <button class="btn btn-primary btn-submit" type="submit">Enviar</button>
               </div>
             </div>
-          -->
           <div class="row">
             <div class="col text-center">
               <label for="message-input">Puedes escribirnos <a href="mailto:boda@cristinacho.com">aquí</a>.</label>
