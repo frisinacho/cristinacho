@@ -282,7 +282,7 @@
     <div class="row ww-rsvp-form">
       <div class="col-md-10">
         <div class="card-body">
-          <form action="mailto:boda@cristinacho.com?subject=Boda Cristinacho" method="POST" enctype="text/plain">
+          <form>
             <div class="row">
               <div class="col md-6 pb-3">
                 <div class="form-group">
@@ -330,12 +330,12 @@
             </div>
             <div class="row">
               <div class="col text-center">
-                <button class="btn btn-primary btn-submit" type="submit">Enviar</button>
+                <button class="btn btn-primary btn-submit" id="submit_msg" type="submit">Enviar</button>
               </div>
             </div>
           <div class="row">
             <div class="col text-center">
-              <label for="message-input">Puedes escribirnos <a href="mailto:boda@cristinacho.com">aquí</a>.</label>
+              <label for="message-input">Puedes escribirnos <a href="mailto:boda@cristinacho.com?subject=Boda Cristinacho">aquí</a>.</label>
             </div>
           </div>
           </form>
@@ -357,6 +357,10 @@
     <script src="scripts/aos.js?ver=1.1.0"></script>
     <script src="scripts/ekko-lightbox.min.js?ver=1.1.0"></script>
     <script src="scripts/main.js?ver=1.1.0"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-firestore.js"></script>
+    <script src="scripts/firebase-config.js"></script>
+    <script src="scripts/fb-firestore.js"></script>
 
     <!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
 	<script src="scripts/simplyCountdown.js"></script>
