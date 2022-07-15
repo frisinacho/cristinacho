@@ -5,7 +5,7 @@
     var push_to_firebase = function(data){
       var db = firebase.firestore();
 
-      db.collection("messages").add({
+      db.collection("messages").doc(Date.now().toString()).set({
           name: data["name"],
           email: data["email"],
           guest: data["guest"],
@@ -14,7 +14,7 @@
           timestamp: Date.now()
       })
       .then(function(docRef) {
-          console.log("Message sent, ID: ", docRef.id);
+          //console.log("Message sent, ID: ", docRef.id);
           alert("¡Gracias por ponerte en contacto!")
           location.reload();
       })
