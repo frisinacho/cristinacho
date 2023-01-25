@@ -5,23 +5,27 @@
     var push_to_firebase = function(data){
       var db = firebase.firestore();
 
-      db.collection("messages").doc(Date.now().toString()).set({
+      if (data["name"] == "") {
+        alert("¡Por favor, dime cómo te llamas!")
+      } else {
+        db.collection("messages").doc(Date.now().toString()).set({
           name: data["name"],
           email: data["email"],
           guest: data["guest"],
           event: data["event"],
           message: data["msg"],
           timestamp: Date.now()
-      })
-      .then(function(docRef) {
+        })
+        .then(function(docRef) {
           //console.log("Message sent, ID: ", docRef.id);
           alert("¡Gracias por ponerte en contacto!")
           location.reload();
-      })
-      .catch(function(error) {
+        })
+        .catch(function(error) {
           console.error("Message could not be sent: ", error);
           alert("¡Vaya, algo salió mal...!")
-      });
+        });
+      }
     }
 
     var contact_submit = function(){
